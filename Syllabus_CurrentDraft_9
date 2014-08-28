@@ -1,0 +1,152 @@
+Topic	
+- DRAFT MATERIAL	
+- Not for Distribution	
+- Expressive Computation, Fall 2014	
+	- Prof. Garrison LeMasters	
+	- Georgetown University	
+- void setup( )	
+	- ZERO	
+	- Greetings, Programs	
+		Nota Bene:  If you miss any of these introductory class meetings, or if you have questions about setting up your coding environment, you will find recorded versions of these first few classes available via the course website.  If you missed the original presentation of material, it is imperative that you review these videos online.
+		- Iteration As Method / Course Overview	
+			- How did it come to this?	
+				- You are highly-educated, culturally-sophisticated, well-travelled; Your interior life is rich; agency and freedom are important to you, and seem generally available to you; You make copious use of new media forms, but are sensitive to the risks you’re taking.  You used Twitter before anyone else, you’ve edited an article or two on Wikipedia, and you frequently browse the App Store — not because you are looking for a specific app, but because you are curious as to what sorts of apps are popular this week.  You work hard, you love to learn, you’re bilingual, you wish you had time to start work on a new language.  You take pride in the sagging bookshelves in your house — or at least their in their contents — which are, essentially, the material traces of your intellectual history.  When new acquaintences come over, you try to put your most interesting books in a place they will be seen.	
+			- Reclaiming computation as a form of humane expression	
+			- Procedural Revelation	
+				- In July of 2013, N. Lamm and M. B. Vogel published a series of images online purporting to answer the question “What if You Could See WiFi?”   It is a good question, even if their answer — neither physically accurate nor conceptually expansive — remains mired in the space between revelation and metaphor.  We can push the question further, I think, and perhaps make its answer potentially more useful, by observing that (1) a more granular perspective reveals that the waves themselves comprise further information, and that (2) rather than emanating uniformly from certain “hotspots,” those waves are always engaged in surveying their physical environment, clarifying and improving the reception of later waves, making contact with other waves’ sources, and negotiating to coexist with those sources.  This is happening constantly.  Our phones, laptops, mp3 players, and — starting next month, if the onlines are accurate — our wristwatches are constantly absorbing, reflecting, and instancing nearly empty waves that are, in essence, the equivalent of SOS signals:  dot dot dot DASH DASH DASH dot dot dot.  And so it isn’t just a beautiful sort of radiation, moving dumbly, blindly between buildings, but an endless series of attempts to elicit communication, to measure the effect of the environment on that communication, or to make better sense of the communication that is already on-going.	
+				- More to the point, I think the metaphor is important here:  We swim in code.  Invisible, undetected by our senses, endlessly, tirelessly repeated.	
+				- By 9 o’clock this morning, without seeing them, whether at the keyboard on your laptop, the touch screen of your tablet, the dashboard of your car, or the steady stream of datawaves passing between us now, you likely passed through about 300 Million lines of code.  Your iPhone, your tablet, your BluRay player, your kitchen clock, your coffee maker, the digital signage in bus shelters, your car, your car’s MP3 player, the GPS unit on top of your bus, the free WIFI networks winking at you as you walk by, the card-swipe device where you paid for your coffee, on checkout.	
+				- Think simply of the layers between you and your casual 5-second scan for new gmail in the browser:	
+					- Gmail HTML, CSS	
+					- Assorted hidden ads, counters, metrics	
+					- Javascript code	
+					- Javascript interpreter	
+					- Browser	
+					- Operating System	
+					- Hardware layer	
+					- Apache servers	
+				- Even if you could see these, though — if you’re anything like most everyone on the planet today — you wouldn’t understand most of them.	
+				- How did it come to this?	
+					- To my mind, this is a singular question that deserves careful teasing apart:  The answers — what answers there are — may help us think about the kind of access to computation we may be granted — or denied — in the future.	
+			- Course requirements	
+				- Time commitments, reasonable and otherwise	
+				- Assorted Weirdness	
+					- Whatever idiosyncrasies are achieved by this course over time are important.  They depend on you, though, for their continued survival.  Don't hesitate to rewrite our script as we push forward.	
+				- Weekly Assignments (no grade given, but comments provided)	
+					- I will provide you with weekly assignments, the majority of which will easily conform to some need you have as you build your first exhibit.  Additionally, I’ll provide you with extended assignments that you may elect to do if you wish to better understand some of the material we’ve covered.	
+				- Pedagogical Diffusion (25%)	
+					- Some years ago, when a friend of mine was completing med school, I became interested in a pedagogy that is fairly common in teaching hospitals world-wide:  “See one, do one, teach one.”  Observe (and absorb), perform (and comprehend), share (and understand).  imiarly. there is, among more than one human rights groups in this city, a phrase that was especially popular among urban, community-minded folk:  “Each one teach one.”  The emphasis here is less on how that knowledge is acquired, then, and more on the value of imparting knowledge to others.	
+					- I like both of these sensibilities, as they hint at the ethical dimensions of teaching even the most innocuous or seemingly apolitical of subjects:  Education is how we preserve our past, but more importantly, it is our way of actively shaping the future.	
+					- What’s more, though, being asked to teach a thing is the surest way to learn how that thing works both inside and out.  You are forced to see the subject through others’ eyes, which is a great way of deepening your own perception of a topic.	
+					- To that end, everyone will be asked — singularly or in pairs — to host a mini-workshop on some aspect of what we cover here.  We won’t get started until the second half of the semester, but it is a good idea to be alert to the possibilities we might consider.	
+					- It is not a requirement, of course, but the ideal is probably that you offer a workshop on something (1) really useful to your peers that (2) is connected to something you know really well.  Let’s say, for example, you love stats, and you use them all the time in your work.  Lot’s of people here do too:  I’d wager that a workshop on “Start Coding:  Building Interactive 3D Bar Graphs” would be interesting.  One aspect of this that seems particularly valuable to me:  You know your classmates, and you watch them work through their research on a daily basis.  Again, I’ll wager that by mid-semester, you see lots of opportunities to help the community grow.	
+					- Finally, this is not a requirement, but I will complain endlessly unless you consent:  I’d like to record these sessions, bundle them together and make them available on Vimeo.  To make it easier, you’ll have right of final refusal:  i.e., we’ll record your workshop, I’ll stitch it together and upload it to Vimeo, where (after watching it) you can either make it public or delete it.	
+				- Our Exhibitions (25% and 35%)	
+					- This course is built around a pair of public exhibitions that we will curate and present, first at the semester’s midpoint and second at it’s conclusion.  Weekly projects, additional assignments and optional challenges will all work serially toward that goal.  (For an occasional change of scenery, however, you may elect to put your main project aside, however, and work on thematically unrelated material.)	
+					- The first exhibit will feature two of your best works, presented as gallery-quality large format (13”x19”) prints.  Your sourcecode -- commented, prettified -- will always accompany each print.  Throughout the semester, we will talk about how code might make art — i.e., the cultural category — into something slightly different than it was before.  As you think about what you are trying to accomplish through your exhibit — what are you saying, to whom, and why? — we’ll find numerous opportunities to deepen our considerations.	
+					- The second exhibit, presented at the semester’s end, will likely include some paper-based prints, but may vary widely across experimental substrates (aluminum, plastic, fabrics), may be animated (via LED monitor), and may include sound, interactivity, live data gathering, and / or 3D-printed artifacts as part of the exhibit.  As was the case before, your sourcecode will accompany each work.	
+				- Your coding diary	
+					- Again, part of the concept of this course is to distend and disrupt those cultural and loosely identified pedagogical conventions associated with the “Learn to Code” movement and Computer Science.  You will keep a bound, paper diary of your daily work with code, as well as your notes from our conversations, notes from programming manuals, screen captures, sketches and diagrams, and more.  My goal is that this diary serve as a record of your personal encounter with code — the beginning of your slow, arduous movement from literate essentialist to pragmatic proceduralist —  with your ideas about computation, with your frustration over difficult assignments or incomprehensible functions.  Ideally this diary should try (at first, at least) to resist the arbitrary vocabularies of capital, of efficiency, of enforced anonymity and idealist uniformity characteristic of much of the code produced today.  It should be unabashedly, unapologetically humane.  If this were 1995, I’d be tempted to encourage you to make this diary as unabashedly emo as possible.	
+						- Bonus:  Emo-core is (sadly) one of DC’s few contributions to nationally-recognized pop music (emo developed out of DC’s hardcore and punk scenes).  (Another, far-superior genre is Go-Go, a house-party-friendly form that developed out of many traditions, including funk and early rap) and was chiefly associated with young African-Americans who particpated in DC’s club scene).	
+				- Post-Final Project:  Expressive Data / ACGT and U	
+					- During our first class meeting, we will discuss the “don’t break the chain” discipline to which I will ask you to adhere for the next 90 days.  But after that, you will face a more daunting challenge:  Does hacking actually become a part of your life?  Do you work to develop a feel for the procedural?  Do you continue to experiment with code as a means of self-expression, a site of critique?  Self-evidently, I hope the answer here is 01.  So I’d like to help you get started by giving you a significant post-final assignment that is not due until the end of the spring semester, when we’ll collect and curate what is available, making your work visible in what I hope you will find an exciting, inspiring manner.	
+					- Until I have confirmed the participation of one or two other organizations with our project, and until I’ve spoken with University IRB about a related matter, the title of this section is the only clue I’ll make public for now.	
+					- For the sake of clarity:  The Post-Final Project is entirely voluntary, and will not be graded.	
+		- Automata For The People: Conway's Game of Life	
+			- A program to simulate Conway’s Game of Life (which is a game in the mathematical sense, not in the Angry Birds sense) was the first code I ever wrote:  Indeed, I learned to code as I worked on different aspects of bringing the mathematician’s famous cellular automaton to life.  There is a lesson to be drawn from that, I think:  (1) I had a deeply personal vision of what I wanted (even if it were the limited — and likely mistaken — vision of a grade-schooler); and (2) I didn’t know anyone who knew anything about programming, except my father, and he lacked any sort of patience, so there was essentially no one to tell me that I ought to drop the matter.  In the spheres of contemporary computer language training, personal investment usually takes a backseat to matters of employment and earnings, and contemporary online communities dedicated to code are fraught with so much toxic sludge and incivility as to leave little room for genuine support.	
+			- Building Cellular Automata is a good way to learn about computation and complexity, and see how they relate to one another in the simple algorithms you will build from the ground up.  	
+	- ONE	
+	- Intro to Processing	
+		- Opening hack:  Spirography	
+			- We will try to begin every session with an “opening hack” — a quick, fun assignment that requires you to incorporate some of last week’s ideas, but leaves room for creative solutions, too.	
+			- Writing quick, short, functional code on a daily basis is one way to improve your skills and avoid the boredom and disorientation that months-long projects can elicit.  It does not have to produce award-winning output, or even useful output, but it has to do something.  This morning, after a few minutes research online, I wrote code that calculated PI with increasing accuracy over time:  I watched for 10 minutes as the current value of myPI grew closer and closer to PI’s irrational value.  For three days prior to today, I’ve been working on code that scribbles an imperfect circle, instead of drawing a precise one.	
+		- Environments:  Native Processing (dedicated PDE), Sublime Text 3 (flexible text editor), and Eclipse (Java editor)	
+		- Structure, format, and convention	
+		- // On the Urgent Need For Code Documentation	
+		- How to Steal Code, and Why	
+		- Getting Started	
+			- Pseudocode, flow charts, and the Soviet method	
+			- Break Everything, Always:  How to Play with Code, and Why	
+		- Processing:  Reference	
+	- TWO	
+	- Programming Languages:  How Do They Work?	
+		- Opening Hack:  10 Print (trad.)	
+		- High-Level Interpreters, Low-Level Compilers, and the Bare Metal of the Machine	
+			- The Insidious Myth of “Real Programming” 	
+			- Software Engineering and the Dangers of Common Essentialisms	
+		- Language: Syntax, Grammar, Morphology, Reference, Interpretation, Convention	
+			- Statement, Block, Chunk, Library, Program	
+			- Expressions	
+			- Order of Operations	
+			* Variables	
+		- 3.9 Mbits of Striated Space (WYSIWYGIWYSIWYGIWYSIWYGIWYSIWYG…)	
+		- Processing:  Cornering Descartes	
+			- rect, ellipse, point, and line	
+			- radians	
+			- curves of all stripes	
+			- color models	
+	- THREE	
+	- Coding Ain’t Easy / Automata for the People	
+		- Opening Hack:  Reverse-Engineering Cellular Automata	
+		- Repetition and Iteration	
+		- Algorithm	
+		- Cellular Automata in Detail	
+		- Processing:  Flow Control	
+			- setup() and draw()	
+			- Loops	
+			- Conditionals	
+			- Void Functions	
+			- Non-Void Functions	
+	- FOUR	
+	- Berechnen der Kunstformen der Natur	
+		- Opening hack:  Reverse-engineer the given images	
+		- Ernst Haeckel’s Kunstformen der Natur	
+		- Processing:  Pick a Number, (Almost) Any Number	
+			- Stochastic distribution	
+			- Perlin noise	
+			- the Weiner Process (seriously)	
+			- Random walkers	
+			- Abstraction:  Custom Functions	
+	- FIVE	
+	- I/O	
+		- Processing: Text, Image, Music	
+			- Arrays	
+			- Parsing text files	
+			- Bitmaps vs Vectors	
+			- Saving Output	
+	- SIX	
+	- Workshop	
+		- Alternative Media:  Image transfer to wood, metal, fabric	
+		- Exhibition Planning and Curation	
+	- SEVEN	
+	- The Bit and the Pendulum	
+		- The Subtractive Philosophy of Simulation	
+		- Processing:	
+			- sohcahtoa	
+	- EIGHT	
+	- Turtles All The Way Down	
+		- Fractals and Self-Similarity	
+		- Processing:  (see “Processing”)	
+			- Making use of recursion	
+	- NINE	
+	- Animated Natures	
+		- Opening hack:  Disney's "sack of flour" audition	
+		- Processing:  What Is the Matrix?	
+			- Manipulating the Graphics Stack	
+			- Move the Universe, Not Yourself	
+	- TEN	
+	- My God…  ItsFullOf( Objects );	
+		- The Myriad Advantages of OOP	
+		- Software’s Soft Determinism	
+			- OOP and the Morphology of Bureaucracy	
+		- Technical:  Abstraction and Encapsulation	
+		- Processing:  Your Constructor and You	
+			* Simple Taxonomy of OOP	
+			- Write a class, declare an object, construct an instance	
+	- ELEVEN	
+	- Method() to (this) .madness	
+		- Agents	
+	- TWELVE	
+	- Beyond Flatland:  Z	
+	- THIRTEEN	
+	- Workshop:  Rendering on Every Axis	
