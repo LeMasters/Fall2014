@@ -1,0 +1,85 @@
+float radOuter;
+float radInner;
+float interiorCircleRad;
+float outerOuterRad;
+float outerInnerRad;
+color bckgd,rings;
+float middleX,middleY;
+float interiorCircleAnchor;
+float _w,_h;
+float r;
+float interiorOrbit, penSpinRate;
+void setup() {
+  size(800,800);
+  smooth(8);
+  _w = width;
+  _h = height;
+  r=0.98;
+  middleX = _w*0.5;
+  middleY = _h*0.5;
+  outerOuterRad = width * 0.85;
+  outerInnerRad = width * 0.975;
+  color bckgd = color(#FFCC33);
+  color rings = color(#FEF2F0);
+  interiorCircleRad = width * 0.10;
+  interiorCircleAnchor = outerInnerRad - interiorCircleRad;
+  background(bckgd);
+ // noLoop();
+}
+
+void draw() {
+
+  translate(middleX,middleY);
+  r=.5+sin(frameCount*0.01);
+  scale(r);
+  for (int i=0;i<2;i++) {
+  pushMatrix();
+  rotate(radians(i*i*0.25));
+ // makeOuterRing();
+  interiorCircleOrbit();
+  makePenCircle();
+  makePenHole();
+  popMatrix();
+  }
+}
+
+void interiorCircleOrbit() {
+  rotate(radians(interiorOrbit));
+  interiorOrbit+=0.25;  
+}
+
+void interiorCircleSpin() {
+  rotate(radians(penSpinRate));
+  penSpinRate-=1.20;
+}
+
+void makePenHole() {
+  interiorCircleSpin();
+  pushMatrix();
+  noStroke();
+  translate(35,0);
+  fill(255,90,90);
+  rect(0,0,2,2);
+  popMatrix();
+  rotate(radians(-40));
+  translate(15,-45);
+  fill(50,50,140);
+  rect(0,0,2,2);
+  rotate(radians(-25));
+  fill(50,120,30);
+  translate(99,50);
+  rect(0,0,2,2);
+}
+
+void makeOuterRing() {
+  fill(#FEF2F0);
+  ellipse(0,0,outerOuterRad,outerOuterRad);
+  fill(#FFCC33);
+  ellipse(0,0,outerInnerRad,outerInnerRad); 
+}
+
+void makePenCircle() {
+  fill(#FEF2F0);
+  translate(interiorCircleAnchor*0.5,0);
+//  ellipse(0,0,interiorCircleRad,interiorCircleRad);
+}
