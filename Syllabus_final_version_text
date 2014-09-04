@@ -1,0 +1,175 @@
+ Expressive Computation, Fall 2014
+ Syllabus (final)
+ 
+ NB: ## I can't find my markdown output app on my office Mac this morning, so I'll just upload a raw text copy.  It is difficult to read, but a formal version will be posted this afternoon.
+ 
+	 Prof. Garrison LeMasters	
+	 Georgetown University	
+ void setup( )	
+	 ZERO	
+	 Greetings, Programs	
+		Nota Bene:  If you miss any of these introductory class meetings, or if you have questions about setting up your coding environment, you will find recorded versions of these first few classes available via the course website.  If you missed the original presentation of material, it is imperative that you review these videos online.
+		 Iteration As Method / Course Overview	
+			 How did it come to this?	
+				 You are highly-educated, culturally-sophisticated, well-travelled; Your interior life is rich; agency and freedom are important to you, and seem generally available to you; You make copious use of new media forms, but are sensitive to the risks you’re taking.  You used Twitter before anyone else, you’ve edited an article or two on Wikipedia, and you frequently browse the App Store — not because you are looking for a specific app, but because you are curious as to what sorts of apps are popular this week.  You work hard, you love to learn, you’re bilingual, you wish you had time to start work on a new language.  You take pride in the sagging bookshelves in your house — or at least their in their contents — which are, essentially, the material traces of your intellectual history.  When new acquaintences come over, you try to put your most interesting books in a place they will be seen.	
+			 Reclaiming computation as a form of humane expression	
+			 Procedural Revelation	
+				 Think simply of the layers between you and your casual 5-second scan for new gmail in the browser:	
+					 Gmail HTML, CSS	
+					 Assorted hidden ads, counters, metrics	
+					 Javascript code	
+					 Javascript interpreter	
+					 Browser	
+					 Operating System	
+					 Hardware layer	
+					 Apache servers	
+				 Even if you could see these, though — if you’re anything like almost everyone else on the planet today — you wouldn’t understand most of them.	
+			 Which raises the question:  How did it come to this?	
+				 To my mind, this is a singular matter that deserves to be teased carefully apart:  The answers — what answers there are — may help us think about the kind of access to computation that we may be granted — or denied — in the future.	
+			 Course requirements	
+				 Time commitments, reasonable and otherwise	
+					 This course, perhaps more than most, requires a substantial personal investment:  You will likely find — like improving your writing, or mastering a foreign language — that you may invest as much time and effort as you can spare, and there yet will be significant room for improvement.  Thus, you are likely poorly served by treating your work for this class in the same manner as you might approach your work for (say) a course like “Readings in Advanced Linguistics” or “The Pre-Socratic Rhetorical Tradition” or “The Cinema of Michael Bay.”  Ideally, of course, classes like these also deserve as much time as you can give them:  It may suffice to read Vico’s Scienza Nuevo  once, but that first reading is augmented immeasurably by a second reading, a third, and so forth.  Even so, one of the reasons we “get by” with a single, hurried reading is our sophisticated literacy:  By this point in your education, you are seldom completely surprised by the way an argument unfolds on the page, or the way evidence is marshalled.  Even the most inventive writers tend to adhere to countless rules and conventions, tacit and otherwise.	
+					 For the moment, though, you lack a sophisticated procedural literacy, and so every new line of code is likely a surprise.	
+					 My advice is that you set aside a certain minimum number of minutes-per-day for focused, uninterrupted effort.  Start with fifteen minutes, if you prefer, but half an hour or 60 minutes would be even better.  And then, as time goes by, you can increase that amount as you see fit.	
+					 Remember that codework is difficult work.  In spite of its reputation as an inhuman practice, nearly every programmer will tell you that they have raged against their machines, or a specific language, or an API, at least once in the past several weeks.  It will happen to you, too.  When you are furious at your computer and have begun to yell at your cat, it is time to stop for the day:  Make a note in your code about the problem you’re having, save, close, and go do something else.	
+				 Assorted Weirdness	
+					 Whatever idiosyncrasies are achieved by this course over time are important.  They depend on you, though, for their continued survival.  Don't hesitate to rewrite our script as we push forward.	
+				 Weekly Assignments (no grade given, but comments provided)	
+					 Through posts to our website, expressivecomputation.com, I will provide you with reasonably flexible weekly assignments, each of which builds serially upon those which came before.  You are always welcome to adapt the assignment to your particular needs as you build towards our first exhibit.  I’ll provide you with additional, optional assignments that work to extend and deepen that week’s ideas.	
+				 Pedagogical Diffusion (20% of your final grade)	
+					 Some years ago, when an acquaintance of mine was completing med school, I became interested in a pedagogy that is fairly common in teaching hospitals world-wide:  “See one, do one, teach one.”  Observe (and absorb), perform (and comprehend), share (and master).  There is a similar phrase that has been especially popular among urban, community-minded folk:  “Each one teach one.”  The emphasis here is less on how knowledge is acquired, then, and more on the value of imparting knowledge to others. 	
+					 I like both of these sensibilities, as they hint at an ethical dimension that inheres to the teaching of even the most innocuous or apparently apolitical of subjects.  Education is how we preserve our past, but more importantly, it is our way of actively shaping one future among many.	
+					 At the same time, though, this method points to a practical matter:  Being asked to teach a thing (and thereby make public your knowledge [or your ignorance]) is the surest way to learn how a thing works both inside and out.  Moreover, as you rehearse your approach to the subject, you are compelled thereby to see your topic through others’ eyes - a proven means of deepening your understanding of the subject.	
+					 To that end, everyone in this course will be asked — singly or in pairs — to host a mini-workshop on some aspect of the skills we cover here.  We will not get started until the second half of the semester, but it is a good idea to be alert to possible topics early on.	
+					 This is the first time I’ve introduced this requirement, so a fair amount of innovation may be required of you, especially early on in the workshop series.  At the same time, of course, I will make every effort to support your work and assess it generously.	
+					 As such, I am open to any proposals for workshop topics you care to propose.  The more imaginative the better.  A live Turing Test, or instantiation of Searle’s “Chinese Room” experiment?  A session that invites participants to write simple graphics algorithms that respond to music?  A workshop on using Processing to build generative filters for experimental video?  Good ideas, all.  The ideal is probably that you offer a workshop on something (1) genuinely useful or deeply interesting to your peers that (2) is connected to something you know really well, or to something about which you are genuinely excited.  Let’s say, for example, you love stats, and you use them all the time in your work.  Lot’s of people here do too:  I’d wager that a workshop on “Start Coding:  Building Interactive 3D Bar Graphs” would be interesting.  One aspect of this that seems particularly valuable to me:  You know your classmates, and you watch them work through their research on a daily basis.	
+						 NB:  Since the first iteration of this syllabus, and our subsequent in-class discussion, I have pursued ways that this effort might include (additionally, or exclusively) particularly vulnerable, underserved populations.  It happens that Georgetown has been central to Pres. Obama's recent My Brother's Keeper initiative, which strives better to serve urban communities by better utilizing existing databases to understand hidden needs and unexpected opportunities.  Together with the director of Georgetown's new Beeck Center for Social Innovation, I'll be meeting with officials at the Dept. of Education on Sept. 12 to discuss how our class might contribute to this effort.	
+					 Finally, this is not a requirement, but I will complain endlessly unless you consent:  I’d like to record these sessions, bundle them together and make them available on Vimeo.  To make it easier, you’ll have right of final refusal:  i.e., we’ll record your workshop, I’ll stitch it together and upload it to Vimeo, where (after watching it) you can either make it public or delete it.	
+					 As we draw nearer to these events, we will work together to define a rubric for assessment.	
+				 Our Exhibitions (25% and 35%)	
+					 This course is built around a pair of public exhibitions that we will curate and present, first at the semester’s midpoint and second at it’s conclusion.  Weekly projects, additional assignments and optional challenges will all work serially toward that goal.  (For an occasional change of scenery, however, you may elect to put your main project aside and work on thematically unrelated material.)	
+					 The first exhibit will feature two of your best works, presented as gallery-quality large format (13”x19”) prints.  Your sourcecode - commented, prettified - will always accompany each print.  Throughout the semester, we will talk about how code might make art into something slightly different than it was before.  As you think about what you are trying to accomplish through your contributions to the exhibit — what are you saying, to whom, and why? — we’ll continue to deepen our considerations.	
+					 The second exhibit, presented at the semester’s end, will likely include some paper-based prints, but may vary widely across experimental substrates (aluminum, plastic, fabrics), may be animated (via LED monitor), and may include sound, interactivity, live data gathering, and / or 3D-printed artifacts as part of the exhibit.  As was the case before, your sourcecode will accompany each work.	
+					 As we draw nearer the first exhibit, we will work together to determine a rubric for assessing your efforts.	
+				 Your coding diary (20%)	
+					 Again, part of the concept of this course is to distend and disrupt those cultural and loosely identified pedagogical conventions associated with the “Learn to Code” movement and Computer Science.  You will keep a bound, paper diary of your daily work with code, as well as your notes from our conversations, notes from programming manuals, screen captures, sketches and diagrams, and more.  My goal is that this diary serve as a record of your personal encounter with code — the beginning of your slow, arduous movement from alphabetic essentialist to pragmatic proceduralist —  with your ideas about computation, together (inevitably) with your frustrations over difficult assignments, incomprehensible functions, uncooperative libraries, and so forth.  Ideally this diary should try (at first) to resist the arbitrary vocabularies of capital, of efficiency, of enforced anonymity and the ethic of an idealist uniformity characteristic of so much of the code produced today.  Your diary should be unabashedly, unapologetically humane.  If this were 1995, I’d be tempted to encourage you to make this diary as unrepentently emo as possible.	
+				 Post-Final Project:  Expressive Data / ACGT and U	
+					 During our first class meeting, we will discuss the “don’t break the chain” discipline to which I will ask you to adhere for the next 90 days.  But after that, you will face a challenge more daunting by far:  How do you make hacking a part of your life?  Do you work to develop further a feel for the procedural?  Do you continue to experiment with code as a means of self-expression, as a site of critique?  Self-evidently, I hope the answer here is 01.	
+					 To that end, I would like to help you get started by giving you a challenging "post-final" assignment that is not "due" until the end of the spring semester, when we’ll collect and curate what is available - making your work visible in what I hope you will find an exciting, inspiring manner.	
+					 I will provide you with more information about this project once I have finalized contributions and approvals from other groups on campus.	
+					 For the sake of clarity:  The Post-Final Project is entirely voluntary, and will not be graded.	
+	 ONE	
+	 Intro to Processing	
+		 Opening hack:  Spirography	
+			 In fifteen minutes' time, try to accomplish as many of these as you are able:	
+				 The drawing emerges as the virtual pen(s) rotate clockwise:  Make the pens draw in a counter-clockwise direction instead;	
+				 Change any of the pens' colors;	
+				 Make all of the colors the same;	
+				 Thicken any of the lines;	
+				 Hide all but one of the lines;	
+				 Add an additional line that traces a different pattern;	
+			 We will try to begin every session with an “opening hack” — a quick, fun assignment that requires you to incorporate some of last week’s ideas, but leaves room for creative solutions, too.	
+			 Writing quick, short, functional code on a daily basis is one way to improve your skills and avoid the boredom and disorientation that months-long projects can elicit.  It does not have to produce award-winning output, or even useful output, but it has to do something.  This morning, after a few minutes research online, I wrote code that calculated PI with increasing accuracy over time:  I watched for 10 minutes as the current value of myPI grew closer and closer to PI’s irrational value.  For three days prior to today, I’ve been working on code that scribbles an imperfect circle, instead of drawing a precise one.	
+		 Environments:  Native Processing (dedicated PDE), Sublime Text (text editor), & Eclipse (Java editor)	
+		 Structure, format, and convention	
+		 // On the Urgent Need For Code Documentation	
+		 How to Steal Code, and Why	
+		 Getting Started	
+			 Pseudocode, flow charts, and the Soviet method	
+			 Break Everything, Always:  How to Play with Code, and Why	
+		 Processing:  Reference	
+			 The plane of the screen, and how to use it	
+		 Automata For The People: Conway's Game of Life	
+			 A program to simulate Conway’s Game of Life (which is a game in the mathematical sense, not in the Angry Birds sense) was the first code I ever wrote:  Indeed, I learned to code as I worked on different aspects of bringing the mathematician’s famous cellular automaton to life.  There is a lesson to be drawn from that, I think:  (1) I had a deeply personal vision of what I wanted (even if it were the limited — and likely mistaken — vision of a grade-schooler); and (2) I didn’t know anyone who knew anything about programming, except my father, and he lacked any sort of patience, so there was essentially no one to tell me that I ought to drop the matter.  In the spheres of contemporary computer language training, personal investment usually takes a backseat to matters of employment and earnings, and contemporary online communities dedicated to code are fraught with so much toxic sludge and incivility as to leave little room for genuinely humane support.	
+			 Building Cellular Automata is a good way to begin our inquiry into computation, complexity, and algorithm. 	
+	 TWO	
+	 Programming Languages:  How Do They Work?	
+		 Opening Hack:  10 Print (trad.)	
+			 Often called 10 Print, this tiny algorithm has been ported to countless computing languages, and constitutes a kind of "folk-code."  Originally conceived on a Commodore 64 (an 8088-based computer whose basic architecture included an amazing sound chip, the SID chip).	
+			 The original code - in reality, an endless loop - looked something like this:	
+				 10 Print chr$(rnd(4)+112); goto 10	
+			 The Commodore's version of the program relied on the fact that all CBM machines used "PET ASCII," a proprietary set of glyphs added to a conventional ASCII character table.	
+		 High-Level Interpreters, Low-Level Compilers, and the Bare Metal of the Machine	
+			 The Insidious Myth of “Real Programming” 	
+			 Software Engineering and the Dangers of Common Essentialisms	
+		 Language: Syntax, Grammar, Morphology, Reference, Interpretation, Convention	
+			 Statement, Block, Chunk, Library, Program	
+			 Expressions	
+			 Order of Operations	
+			 Variables	
+				 namingConventions and _legibility	
+				 Scope:  All Variables is Local [sic.]	
+		 3.9 Mbits of Striated Space (WYSIWYGIWYSIWYGIWYSIWYGIWYSIWYG…)	
+		 Processing:  Cornering Descartes	
+			 rect, ellipse, point, and line	
+			 radians	
+			 curves of all stripes	
+			 color models	
+	 THREE	
+	 Coding Ain’t Easy / Automata for the People	
+		 Opening Hack:  Reverse-Engineering Cellular Automata	
+		 Repetition and Iteration	
+		 Algorithm	
+		 Cellular Automata in Detail	
+		 Processing:  Flow Control	
+			 setup() and draw()	
+			 Loops	
+			 Conditionals	
+			 Void Functions	
+			 Non-Void Functions	
+	 FOUR	
+	 Berechnen der Kunstformen der Natur	
+		 Opening hack:  Reverse-engineer the given images	
+		 Ernst Haeckel’s Kunstformen der Natur	
+		 Processing:  Pick a Number, (Almost) Any Number	
+			 Stochastic distribution	
+			 Perlin noise	
+			 the Weiner Process (seriously)	
+			 Random walkers	
+			 Abstraction:  Custom Functions	
+	 FIVE	
+	 I/O	
+		 Processing: Text(); Image(); Music();	
+			 Arrays	
+			 Parsing text files	
+			 Bitmaps vs Vectors	
+			 Saving Output	
+	 SIX	
+	 Workshop	
+		 Alternative Media:  Image transfer to wood, metal, fabric	
+		 Exhibition Planning and Curation	
+	 SEVEN	
+	 The Bit and the Pendulum	
+		 The Subtractive Philosophy of Simulation	
+		 Processing:	
+			 sohcahtoa	
+	 EIGHT	
+	 Turtles All The Way Down	
+		 Fractals and Self-Similarity	
+		 Processing:  (see “Processing”)	
+			 Making use of recursion	
+	 NINE	
+	 Animated Natures	
+		 Opening hack:  Disney's "sack of flour" audition	
+		 Processing:  What Is the Matrix?	
+			 Manipulating the Graphics Stack	
+			 Move the Universe, Not Yourself	
+	 TEN	
+	 My God…  ItsFullOf( Objects );	
+		 The Myriad Advantages of OOP	
+		 Software’s Soft Determinism	
+			 OOP and the Morphology of Bureaucracy	
+		 Technical:  Abstraction and Encapsulation	
+		 Processing:  Your Constructor and You	
+			 Simple Taxonomy of OOP	
+				 Class	
+				 Object	
+				 Instance	
+			 Write a class, declare an object, construct an instance	
+	 ELEVEN	
+	 Method() to (this) .madness	
+		 Agents	
+	 TWELVE	
+	 Beyond Flatland:  Z	
+	 THIRTEEN	
+	 Workshop:  Rendering on Every Axis	
