@@ -1,0 +1,97 @@
+
+ThingUm[] thing;
+float clock; // for now, master clock.  later, local time.
+float amplitude = 50; //wave height, in percent
+float period = 50; //wave length, in percent
+float dX; // uses period, width, and ThingUm.wide
+float _w = width;
+float _h = height;
+PShape blob;
+
+// s,t,x,y,a
+void setup() {
+  size(1280,920);
+  thing = new ThingUm[1];
+  for (int i = 0; i<thing.length; i++) {
+    float s = random(0.0225,0.0275);
+    float t = random(0.01,0.0125);
+    float a = random(height*0.2,height*0.3);
+    float x = 20 - sin(radians(90*i))*40;
+    float y = 20 - cos(radians(90*i))*40;
+    thing[i] = new ThingUm(s,t,x,y,a);
+  }
+  smooth();
+  rectMode(CENTER);
+  background(#40C0E5);
+  fill(255,100);
+  strokeWeight(0);
+  noStroke();
+}
+
+float pct(float p, float q) {
+  p = p * 0.01;
+  q = q * p;
+  return q;
+}
+
+void draw() {
+  clock=clock+.125;
+  //float n = 9 - (noise(clock) * 18);
+
+  translate(clock*1.75,height/2);
+  rotate(radians(clock*sin(frameCount*0.015)));  
+  shapeMaker();
+}
+
+void shapeMaker() {
+
+
+ // beginShape();
+  pushMatrix();
+  rotate(radians(clock*sin(frameCount*0.0075)));  
+  for (int i=0; i<thing.length; i++) {
+    thing[i].waveFinder();
+    float sz = 60 + (i*12);
+    rect(thing[i].xPos,thing[i].yPos,sz,2);
+    //vertex(thing[i].xPos,(thing[i].yPos));
+   // rect(thing[i].xPos,thing[i].yPos,15,15);
+//    vertex(thing[i].xPos,thing[i].yPos);
+
+  }
+    popMatrix();
+
+//  endShape(CLOSE);
+}
+
+
+class ThingUm {
+  float speed;
+  float theta;
+  float xPos;
+  float yPos;
+  float amplitude;
+  float rateOfChange;
+  float high;
+  float wide;
+
+  ThingUm(float s, float t, float x, float y, float a) {
+    speed = s;
+    theta = t;
+    xPos = x;
+    yPos = y;
+    amplitude = a;
+    rateOfChange = 0.013;
+    high = 3;
+    wide = 3;
+  }
+
+  void waveFinder() {
+    xPos = xPos + speed;
+    theta = theta + rateOfChange;
+    yPos = sin(theta) * amplitude;
+  }
+  
+  
+  
+}
+
