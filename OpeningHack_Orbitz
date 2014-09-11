@@ -1,0 +1,115 @@
+
+/**
+
+ Garrison LeMasters, d.phil.
+ Georgetown University
+ CCTP714  Expressive Computation  Fall 2014
+ Updated 11 Sept 2014
+ 
+  All code for CCTP714 is licensed under the
+  Creative Commons Attribution 4.0 Int'l License
+  see http://creativecommons.org
+
+**/
+
+
+
+// global variables
+
+float bodySolRadius;
+float planetEarthRadius;
+float bodyLunaRadius;
+float bodySatelliteRadius;
+
+float bodySolSpeed;
+float planetEarthSpeed;
+float bodyLunaSpeed;
+float bodySatelliteSpeed;
+
+float bodySolLocation;
+float planetEarthLocation;
+float bodyLunaLocation;
+float bodySatelliteLocation;
+
+float bodySolOrbitRadius,planetEarthOrbitRadius,bodyLunaOrbitRadius;
+float bodySatelliteOrbitRadius;
+
+// simple orbitz
+// series of simple, cumulative xformations, rotations
+
+void setup() {
+  size(800,800);
+  rectMode(CENTER);
+  smooth(8);  
+  noStroke();
+  fill(220);
+
+// self-evidently, not to scale;
+  bodySolRadius = 190;
+  planetEarthRadius = 15;
+  bodyLunaRadius = 8;
+  bodySatelliteRadius = 4;
+  
+  bodySolLocation = 0;
+  planetEarthLocation = 0;
+  bodyLunaLocation = 0;
+  bodySatelliteLocation = 0;
+  
+  bodySolSpeed = 0;
+  planetEarthSpeed = 0.320;
+  bodyLunaSpeed = 0.15;
+  bodySatelliteSpeed = 0.225;
+  
+  bodySolOrbitRadius = 0;
+  planetEarthOrbitRadius = 250;
+  bodyLunaOrbitRadius = 75;
+  bodySatelliteOrbitRadius = 32;
+  
+}
+
+void draw() {
+  background(32);
+//  fill(50,6);
+//  rect(width*0.5,height*0.5,width,height);
+
+  // move everything (in memory) first;
+  // then place Sol, then Earth, then Moon, then satellite;
+  
+  bodySolLocation += bodySolSpeed;
+  planetEarthLocation += planetEarthSpeed;
+  bodyLunaLocation += bodyLunaSpeed;
+  bodySatelliteLocation += bodySatelliteSpeed;
+  
+  // first, middle o'the screen;
+  
+  translate(width*0.5,height*0.5); // centered;
+  
+ // translate(bodySolOrbit,0); // we'll always work on x-axis
+ // Note that we never "undo" any of these translations --
+ // they are cumulative.
+ // rotate(radians(bodySolLocation));
+ 
+  rect(0,0,bodySolRadius,bodySolRadius);
+  // rect, instead of ellipse, makes it easier to see 
+  // movement on several axes.
+  
+  // now, terran
+  
+  rotate(radians(planetEarthLocation));
+  translate(planetEarthOrbitRadius,0); // x-axis only
+  rect(0,0,planetEarthRadius,planetEarthRadius);// ok, not really "radius"
+  
+  //  now, lunar
+  
+  rotate(radians(bodyLunaLocation));
+  translate(bodyLunaOrbitRadius,0); // still x-axis only
+  rect(0,0,bodyLunaRadius,bodyLunaRadius);
+
+  // finalement:  Satellite
+  
+  rotate(radians(bodySatelliteLocation));
+  translate(bodySatelliteOrbitRadius,0);
+  rect(0,0,bodySatelliteRadius,bodySatelliteRadius);
+
+  // FIN!
+}
