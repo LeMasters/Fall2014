@@ -103,4 +103,11 @@ void draw() {
       popMatrix();
     }
   }
+  saveFrame("Sept25_Bubbles-####.png");
+  // This awesome function saves the screen as it appears at this moment.
+  // You can save as png, jpg, etc., but .png is my preference.
+  // If you just say saveFrame(); it will work too, but
+  // will assign a name to the file itself.  It always saves them
+  // serially, and does not overwrite old files.  It puts them
+  // in the /data directory under your processing sketch folder.
 }
